@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Your app title -->
+    <title>ACD NOMINA</title>
+
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        <link href="assets/fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+            <link href="assets/css/framework.css" rel="stylesheet" type="text/css">
+                <link href="assets/css/css" rel="stylesheet">
+                    <meta content="yes" name="apple-mobile-web-app-capable">
+                    </meta>
+                </link>
+            </link>
+        </link>
+    </link>
+
+
+
+
+
+</head>
+
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+        <div class="content-block">
+            <p>Left panel content goes here</p>
+        </div>
+    </div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar header header-light header-logo-center">
+                <div class="navbar-inner">
+                    <div class="left">
+                        <a href="#" class="link icon-only open-panel"><i class="fas fa-bars"></i></a>
+                    </div>
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="center sliding"><h3 class="uppercase bolder center-text" >ACD NOMINA</h3></div>
+                    
+                </div>
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content header-clear">
+                        <div class="single-slider owl-carousel owl-no-dots bg-white owl-loaded owl-drag">
+                        <div class="owl-stage-outer owl-height">
+                            <div class="owl-stage">
+                                <div class="owl-item cloned" >
+                                    <div>
+                                        <img class="owl-lazy" data-src="assets/img/7.jpg" data-src-retina="assets/img/7.jpg" src="assets/img/7.jpg" style="opacity: 1;" width="700">
+                                            <h1 class="above-overlay cover-content-bottom center-text uppercase bolder color-white bottom-30">
+                                                Ultra
+                                                <span class="color-highlight">
+                                                    Elegant
+                                                </span>
+                                            </h1>
+                                            <div class="overlay overlay-gradient">
+                                            </div>
+                                        </img>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-to-action">
+                        <a href="tel:+1 234 567 890">
+                            <i class="fa fa-phone">
+                            </i>
+                            <em>
+                                Call
+                            </em>
+                        </a>
+                        <a href="sms:+1 234 567 890">
+                            <i class="fa fa-comment">
+                            </i>
+                            <em>
+                                Message
+                            </em>
+                        </a>
+                        <a href="mailto:yourname@domain.com">
+                            <i class="fa fa-envelope">
+                            </i>
+                            <em>
+                                Mail
+                            </em>
+                        </a>
+                    </div>
+
+                    <div class="content top-30">
+                        <h2 class="uppercase bolder center-text bottom-20">
+                            The Mobile Website
+                            <br>
+                                You've Been Looking For
+                            </br>
+                        </h2>
+                        <div class="deco-thin bg-highlight bottom-20">
+                        </div>
+                        <p class="bottom-30 boxed-text-large">
+                            Our products are carefuly constructed with each aspect from the user interface to the experience carefuly crafted to obtain mobile perfection.
+                        </p>
+                        <a class="button button-s button-center-medium bg-highlight ultrabold uppercase button-round" href="https://www.enableds.com/products/ultramobile/index.html#">
+                            Get A Quote
+                        </a>
+                    </div>
+                    <div class="decoration decoration-margins">
+                    </div>
+                    <div class="card card-blue">
+                        <h1 class="color-white uppercase bolder center-text top-10">
+                            Did you know?
+                        </h1>
+                        <p class="small-text center-text color-white bottom-15 opacity-50">
+                            The Mobile web is Growing. Don't skip out.
+                        </p>
+                        <p class="color-white center-text opacity-80 top-10 bottom-30">
+                            Last year over 70% of online Traffic was generated by Mobile Devices and Google is ranking Mobile Search results based on speed of loading.
+                        </p>
+                        <a class="button button-round button-xs uppercase ultrabold button-xs button-center button-white" href="https://www.enableds.com/products/ultramobile/index.html#">
+                            Read More
+                        </a>
+                    </div>
+                        
+                    </div><!--Final del content-->
+                </div>
+            </div>
+            <!-- Bottom Toolbar
+            <div class="toolbar">
+                <div class="toolbar-inner">
+                    
+                    <a href="#" class="link">Link 1</a>
+                    <a href="#" class="link">Link 2</a>
+                </div>
+            </div>-->
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script src="assets/js/jquery.js" type="text/javascript"></script>
+    <script src="assets/js/plugins.js" type="text/javascript"></script>
+    <script src="assets/js/custom.js" type="text/javascript"></script>
+</body>
+
+</html>
